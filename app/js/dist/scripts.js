@@ -5,12 +5,14 @@ document.querySelector('.findRadio').addEventListener('submit', function(e){
 
 async function runSearch(searchTerm){
     let data = await searchAllStations(searchTerm);
-    let selectionArray = {}
+    let search = []
     data.forEach(element => {
         if (element.tags == searchTerm) {
-            selectionArray[element.id] = element; 
+            search.push(element)
         }
-        console.log(selectionArray)
+        console.log(search[Math.floor(Math.random()*search.length)])
+        // [Math.floor(Math.random()*data.length)]
+        // 
     });
     }
 
