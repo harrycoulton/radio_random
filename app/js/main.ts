@@ -1,1 +1,2 @@
-var harry: string = 'harry'
+var harry = 'h';
+
