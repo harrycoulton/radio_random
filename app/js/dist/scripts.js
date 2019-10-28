@@ -9,8 +9,7 @@ async function runSearch(searchTerm){
     let result = search[Math.floor(Math.random()*search.length)]
     console.log(result)
     await populateHandlebars('.url', 'js/templates/audio.hbs', result)
-    var audio = document.querySelector('audio')
-    audio.play()
+    document.querySelector('audio').play()
     }
 
 async function searchAllStations(search) {
