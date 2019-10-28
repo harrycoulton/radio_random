@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Radio-Random</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="js/dist/scripts.js" async></script>
+    <script src="js/dist/handlebars-v4.0.11.js" async></script>
+     <script src="js/dist/domhandling.js" defer></script>
 </head>
 <body>
-    <form action="none" class="findRadio">
-     <input type="text" class="searchTerm" name="searchTerm">
-     <input type="submit" class="submit">
+    <div class="container">
+    <div class="navBar">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Randomise</a>
+            <a href="#">Login</a>
+        </nav>
+    </div>
+    <div class="playContainer" data-aos="flip-left">
+        <h2>Radio_Random</h2>
+        <h4>Type in a genre and hit play to hear a random radio station</h4>
+        <form action="none" class="findRadio">
+    <input type="text" class="searchTerm" name="searchTerm">
+    <input type="submit" class="submit" value="Play">
     </form>
-    <div class="url"></div>
+    <div class="url"></div></div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

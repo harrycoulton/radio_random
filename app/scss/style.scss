@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(12, 70, 146);
+}
+
+a:hover {
+    color: rgb(72, 95, 173); 
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #913519, #993d18, #a14616, #a84f14, #af5811, #b7640d, #bf7106, #c57e00, #cd9200, #d3a600, #d6bb00, #d7d009);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar {
+    display: none; 
+    width: 80%;
+    background: rgba(0, 0, 0, 0.192); 
+    nav {
+        font-size: 2rem; 
+    }
+}
+
+.playContainer {
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radioName {
+    color: rgb(35, 255, 35); 
+}
