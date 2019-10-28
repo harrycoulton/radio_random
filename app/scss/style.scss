@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     margin: 0;
-    padding: 0; 
 }
 
 a {
@@ -42,4 +41,18 @@ a:hover {
 
 .radioName {
     color: rgb(35, 255, 35); 
+}
+
+input {
+    font-size: 1.5rem; 
+    margin: 5vh 0; 
+}
+
+.submit {
+    height: 100%;
+    width: 50px; 
+}
+
+audio {
+    margin: 5vh; 
 }

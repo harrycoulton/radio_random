@@ -6,7 +6,7 @@ async function runSearch(searchTerm){
             search.push(element)
         }
     })
-    let result = search[Math.floor(Math.random()*data.length)]
+    let result = search[Math.floor(Math.random()*search.length)]
     console.log(result)
     await populateHandlebars('.url', 'js/templates/audio.hbs', result)
     }
