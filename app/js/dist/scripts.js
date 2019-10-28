@@ -7,13 +7,12 @@ async function runSearch(searchTerm){
     let data = await searchAllStations(searchTerm);
     let search = []
     data.forEach(element => {
-        if (element.tags == searchTerm) {
+        if (element.tags == searchTerm || element.name) {
             search.push(element)
         }
-        console.log(search[Math.floor(Math.random()*search.length)])
-        // [Math.floor(Math.random()*data.length)]
-        // 
-    });
+    })
+    let result = search[Math.floor(Math.random()*data.length)]
+    document.querySelector('.url').innerHTML = '<a href="'+result.homepage+'" target="_blank">'+result.homepage+'</a><br><ul><li>'+result.name+'</li><li>'+result.tags+'</li>'
     }
 
 async function searchAllStations(search) {
