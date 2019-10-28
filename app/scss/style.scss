@@ -44,15 +44,26 @@ a:hover {
 }
 
 input {
+    height: 100%;
+    width: 50%; 
+    margin-right: 2%; 
     font-size: 1.5rem; 
-    margin: 5vh 0; 
 }
 
 .submit {
     height: 100%;
-    width: 50px; 
+    min-width: 10%; 
+    font-size: 1.5rem; 
+}
+.submit:hover {
+    color: rgb(16, 165, 16);
 }
 
 audio {
     margin: 5vh; 
+}
+
+.findRadio {
+    height: 7vh; 
+    margin: 5vh 0; 
 }
