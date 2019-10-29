@@ -1,12 +1,17 @@
 <div class="audioContainer">
-    <h3 class="radioName">{{name}}</h3>
-    <p class="radioName">Tags: {{tags}}</p>
-    <p class="radioName">Country: {{country}}</p>
-    <a href="{{homepage}}">Visit the site</a>
-    <p>Many radio stations around the world come on and offline every day; if a station is unresponsive, please hit play again. If the play button on the player is greyed out, this may mean that the station is offline.</p>
-    <p>If a station isn't playing, you can also try pressing play on the player.</p>
-    <audio id="myAudio" data-aos="fade-right" controls="controls" autoplay="true" >
+  <div data-aos="fade-down">
+    <h3 class="radioName" >{{name}}</h3>
+    <p class="radioName" >Tags: {{tags}}</p>
+    <p class="radioName" >Country: {{country}}</p>
+    <a href="{{homepage}}" >Visit the site</a>
+    <p >Many radio stations around the world come on and offline every day; if a station is unresponsive, the player will refresh until it finds a responsive station.</p>
+   </div>
+    <audio id="myAudio" autoplay>
   <source src="{{url}}" type="audio/mpeg">
   <source src="{{url}}" type="audio">
 </audio>
+    <div class="controls" data-aos="fade-right">
+        <button id="play"><i class="fas fa-play" ></i></button>
+        <button id="pause"><i class="fas fa-pause"></i></button>
+    </div>
 </div>

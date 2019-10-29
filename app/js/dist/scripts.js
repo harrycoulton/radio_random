@@ -47,3 +47,32 @@ async function getTemplateAjax(path) {
     )
     return response.text()
 }
+ async function searchDestroy() {
+     await runSearch(document.querySelector('.searchTerm').value)
+     document.querySelector('#play').classList.add("flashing")
+     document.querySelector('#play').style.color = "rgb(35, 255, 35)"
+     document.querySelector('#pause').style.color = "black"
+     var myAudio = document.querySelector('audio')
+     setTimeout(function(){
+        if (myAudio.duration > 0 && !myAudio.paused) {
+            document.querySelector('#play').classList.remove("flashing")
+        } 
+    }, 2000)
+     setTimeout(function(){
+         if (myAudio.duration > 0 && !myAudio.paused) {
+            document.querySelector('#play').classList.remove("flashing")
+         } else {
+             searchDestroy()
+         } 
+     }, 4500)
+     document.querySelector('#play').addEventListener('click', function(){
+        document.querySelector('#play').style.color = "rgb(35, 255, 35)"
+        document.querySelector('#pause').style.color = "black"
+        document.querySelector('audio').play()
+    })
+    document.querySelector('#pause').addEventListener('click', function(){
+        document.querySelector('#play').style.color = "black"
+        document.querySelector('#pause').style.color = "rgb(35, 255, 35)"
+        document.querySelector('audio').pause()
+    })
+ }

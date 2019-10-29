@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+*:focus {
+    outline: none; 
+}
+
 a {
     text-decoration: none;
     color: rgb(12, 70, 146);
@@ -59,11 +63,24 @@ input {
     color: rgb(16, 165, 16);
 }
 
-audio {
-    margin: 5vh; 
-}
-
 .findRadio {
     height: 7vh; 
     margin: 5vh 0; 
+}
+#pause, #play {
+    background: none; 
+    border: none;
+    font-size: 4rem; 
+}
+
+.flashing {
+    animation: flashing 1s linear infinite;
+}
+
+@keyframes flashing {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
 }
