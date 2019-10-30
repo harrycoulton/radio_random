@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     margin: 0;
+    word-wrap: break-word;
 }
 
 *:focus {
@@ -43,8 +44,14 @@ a:hover {
     justify-content: center;
 }
 
+h2 {
+    font-size: 2rem; 
+    color: rgb(35, 255, 35);
+}
+
 .radioName {
     color: rgb(35, 255, 35); 
+    width: 90%; 
 }
 
 input {
@@ -72,6 +79,52 @@ input {
     border: none;
     font-size: 4rem; 
 }
+
+@media only screen and (max-width: 500px) {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .url {
+        margin-top: 40px; 
+    }
+    
+    .playContainer {
+        width: 90%;
+    }
+    h2 {
+        font-size: 1rem; 
+    }
+    h4 {
+        font-size: 0.8rem; 
+    }
+    
+    #pause, #play {
+        background: none; 
+        border: none;
+        font-size: 2rem; 
+    }
+    input {
+        height: 70%; 
+        width: 50%;  
+        min-width: 100px;
+        font-size: 0.8rem; 
+        margin-top: 10px; 
+    }
+    
+    .submit {
+        height: 70%; 
+        margin-top: 10px; 
+        min-width: 10%; 
+        font-size: 1rem; 
+    }
+    .radioName {
+        font-size: 0.8rem; 
+    }
+    p {
+        font-size: 0.7rem; 
+    }
+  }
 
 .flashing {
     animation: flashing 1s linear infinite;

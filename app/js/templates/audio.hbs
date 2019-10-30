@@ -1,12 +1,5 @@
 <div class="audioContainer">
-  <div data-aos="fade-down">
-    <h3 class="radioName" >{{name}}</h3>
-    <p class="radioName" >Tags: {{tags}}</p>
-    <p class="radioName" >Country: {{country}}</p>
-    <a href="{{homepage}}" target="_blank">Visit the site</a>
-    <p >Many radio stations around the world come on and offline every day; if a station is unresponsive, the player will refresh until it finds a responsive station.</p>
-   </div>
-    <audio id="myAudio" autoplay>
+   <audio id="myAudio">
   <source src="{{url}}" type="audio/mpeg">
   <source src="{{url}}" type="audio">
 </audio>
@@ -14,4 +7,11 @@
         <button id="play"><i class="fas fa-play" ></i></button>
         <button id="pause"><i class="fas fa-pause"></i></button>
     </div>
+  <div data-aos="fade-down">
+    <h3 class="radioName" >{{name}}</h3>
+    <p class="radioName" >Tags: {{tags}}</p>
+    <p class="radioName" >Country: {{country}}</p>
+    <a href="{{homepage}}" target="_blank">Visit the site</a>
+    <p class="radioName">Many radio stations around the world come on and offline every day; if a station is unresponsive, the player will refresh until it finds a responsive station.</p>
+   </div>
 </div>
